@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <head>
+      <!-- Google Fonts -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap"
+        rel="stylesheet"
+      />
+      <!-- Font Awesome -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+    </head>
+  </head>
+  <body>
+    <!-------------- NAVBAR ------------->
+    <nav>
+      <div class="logo"><img src="./images/logo.png" alt="Logo" /></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- Contact Form -->
+    <div style="margin-top: 50px"></div>
+    <div class="container">
+      <div class="contact-form">
+        <h2>Contact</h2>
+        <form>
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="tel" name="phone" placeholder="phone number" required />
+          <input type="email" name="email" placeholder="Email" required />
+
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Send Now</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h2>Be in touch</h2>
+        <p class="contact-para">
+          You can request a design service or inquire about anything else, by
+          filling out the contact form, calling one of our numbers, or sending
+          an e-mail.
+        </p>
+        <address>
+          <p>Medina - Second Ring Raod(King Abdul Aziz Road)</p>
+          <p>Phone: 0599932836</p>
+
+          <p>
+            Email:
+            <a
+              href="eng.z.k.madina@gmail.com
+            "
+              >eng.z.k.madina@gmail.com
+            </a>
+          </p>
+        </address>
+      </div>
+    </div>
+
+    <!-- FOR MAP  -->
+    <div class="visit-container">
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.759656541168!2d39.5875063!3d24.4591226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdbfe43477604d%3A0x2a28f6debbe267be!2z2YXZg9iq2Kgg2LLZitin2K8g2LnYqNivINin2YTYsdit2YXZhiDZg9ix2YrYtNin2YYg2YTZhNin2LPYqti02KfYsdin2Kog2KfZhNmH2YbYr9iz2YrYqSBaQUsgQXJjaGl0ZWN0ZA!5e0!3m2!1sen!2s!4v1716059442307!5m2!1sen!2s"
+          width="650"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="info-wrapper">
+        <h2>Visit us</h2>
+        <p>
+          We are pleased to see you and work with you in our office, we
+          guarantee you all professionalism in work and speed in completion.
+          Follow the sitemap to reach us and you are welcome.
+        </p>
+        <p>
+          Office of Eng. AbdulRahman Abdullah Baothman for engineering
+          consultancy and its activities.
+        </p>
+      </div>
+    </div>
+    <!------------FOOTER ---------------- -->
+    <footer>
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="footer-text">
+            <h1>Get in Touch</h1>
+            <p>
+              <a href="mailto:eng.z.k.madina@gmail.com"
+                >eng.z.k.madina@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="footer-details">
+            <div class="footer-address">
+              <h3>Address</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Medina - Second Ring Road
+                (King Abdulaziz Road)
+              </p>
+            </div>
+            <div class="footer-phone">
+              <h3>Phone</h3>
+              <p><i class="fas fa-phone-alt"></i> 0599932836</p>
+            </div>
+            <div class="footer-social">
+              <h3>Follow Us</h3>
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+          <p>Developed by Hussain</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      // You can add JavaScript for additional functionality if needed
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Form submitted successfully!");
+      });
+    </script>
+  </body>
+</html>

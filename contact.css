@@ -1,0 +1,174 @@
+/* General body styling */
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px; /* Increased max width */
+  width: 100%;
+  background-color: #e8eff7;
+  padding: 40px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 40px; /* Increased gap */
+}
+
+/* Flex items within the container */
+.contact-form,
+.contact-info {
+  flex: 1;
+}
+
+/* Heading styling */
+h2 {
+  font-size: 28px; /* Increased font size */
+  margin-bottom: 20px;
+  /* position: relative; */
+}
+
+/* After element for headings */
+h2:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #000;
+  margin-top: 5px;
+}
+
+/* Form styling within contact form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input, select, and textarea styling */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  margin-bottom: 20px; /* Increased margin */
+  padding: 15px; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px; /* Increased font size */
+  color: #333;
+  background-color: #fff;
+}
+
+/* Textarea specific styling */
+.contact-form textarea {
+  height: 150px; /* Increased height of textarea */
+}
+
+/* Button styling within contact form */
+.contact-form button {
+  padding: 15px; /* Increased padding */
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px; /* Increased font size */
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/* Paragraph styling within contact form */
+.contact-para {
+  margin-top: 34px;
+  line-height: 1.9;
+}
+
+/* Contact info styling */
+.contact-info p,
+.contact-info address {
+  margin: 30px 0;
+  line-height: 1.6;
+  font-size: 18px; /* Increased font size */
+  color: #333;
+}
+
+/* Anchor tag styling within contact info */
+.contact-info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Media query for screens wider than 600px */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .contact-form,
+  .contact-info {
+    margin-bottom: 0;
+  }
+}
+
+/* Map section styling */
+.visit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* Map wrapper styling */
+.map-wrapper {
+  width: 40%;
+  max-width: 664px;
+  height: 450px;
+}
+
+/* Info wrapper styling */
+.info-wrapper {
+  max-width: 400px;
+  text-align: justify;
+  line-height: 1.99;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Info wrapper heading styling */
+.info-wrapper h2 {
+  font-size: 38px;
+  color: rgb(27, 206, 226);
+  margin-bottom: 20px;
+}
+
+/* Info wrapper paragraph styling */
+.info-wrapper p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Media query for screens wider than 600px */
+@media (min-width: 600px) {
+  .visit-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .map-wrapper,
+  .info-wrapper {
+    flex: 1;
+  }
+
+  .info-wrapper {
+    margin-left: 20px;
+  }
+}

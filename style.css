@@ -1,0 +1,418 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Body Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Use Arial as the default font */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navigation Bar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(
+    9,
+    167,
+    167
+  ); /* Set background color for the navigation bar */
+  color: #fff; /* Set text color to white */
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Logo Styling */
+.logo img {
+  max-width: 20%;
+  height: auto; /* Ensure the logo image scales properly */
+}
+
+/* Navigation Links Styling */
+.nav-links {
+  display: flex;
+  list-style: none; /* Remove default list styling */
+}
+
+.nav-links li {
+  margin-left: 20px; /* Add space between each navigation link */
+}
+
+.nav-links li a {
+  color: #fff; /* Set link color to white */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none; /* Hide hamburger menu by default */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  position: absolute;
+  right: 20px;
+  top: 5%;
+  transform: translateY(-50%);
+}
+
+/* Hamburger Menu Lines Styling */
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff; /* Set line color to white */
+  margin: 5px;
+  transition: all 0.3s ease-in-out; /* Add transition effect */
+}
+
+/* Active State for Hamburger Menu */
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide navigation links on smaller screens */
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+    width: 100%;
+    background-color: rgb(9, 167, 167);
+    position: absolute;
+    top: 9%;
+    left: 0;
+    padding: 1rem 0;
+  }
+
+  .nav-links.nav-active {
+    display: flex; /* Show navigation links when active */
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Add space between each navigation link */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu on smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    padding: 1rem 2rem; /* Adjust padding for medium screens */
+  }
+
+  .nav-links {
+    margin-left: auto; /* Align navigation links to the right */
+  }
+
+  .nav-links li {
+    margin-left: 15px; /* Adjust space between navigation links */
+  }
+
+  .logo img {
+    height: 30px; /* Adjust logo height for medium screens */
+  }
+}
+
+/*------------------- Our Services Section ----------------------*/
+/* Service Heading Styling */
+.service-heading {
+  text-align: center;
+  margin: 20px;
+  font-size: 3.5rem;
+  color: rgb(6, 117, 165); /* Set heading color */
+}
+
+/* Container Styling */
+.container {
+  max-width: 1100px;
+  margin: 0 auto; /* Center the container */
+  padding: 2rem;
+}
+
+/* Service Item Styling */
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 3rem 0;
+}
+
+/* Service Item Image Styling */
+.service-item img {
+  max-width: 37%;
+  height: auto;
+  margin-right: 2rem;
+  border-radius: 5px;
+}
+
+/* Service Content Styling */
+.service-content {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  text-align: justify;
+}
+
+/* Service Content Heading Styling */
+.service-content h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(156, 17, 17);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Service Content Paragraph Styling */
+.service-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Service Content Hover Effect */
+.service-content:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Styles for Service Section */
+@media (max-width: 768px) {
+  .service-item {
+    flex-direction: column; /* Stack service items vertically on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-item img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .service-content {
+    padding: 1rem;
+  }
+}
+
+/* --------------Second Card Styling --------------*/
+.main-container {
+  margin: 2rem auto;
+}
+
+/* Card Styling */
+.card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+/* Text Content Styling */
+.text-content {
+  flex: 1;
+  padding: 1.7rem 2rem;
+  text-align: justify;
+}
+
+/* Secondary Heading Styling */
+.secondary-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(156, 17, 17);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Description Paragraph Styling */
+.description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Text Content Hover Effect */
+.text-content:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Image Box Styling */
+.image-box {
+  max-width: 40%;
+  height: auto;
+  margin-left: 2rem;
+}
+
+/* Image Box Image Styling */
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Responsive Styles for Second Card */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Stack card items vertically on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-box {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .text-content {
+    padding: 1rem;
+  }
+}
+
+/* --------Footer------------- */
+/* Footer Styling */
+footer {
+  background-color: rgb(9, 167, 167);
+  color: whitesmoke;
+  padding: 2rem 0;
+}
+
+/* Footer Container Styling */
+.container-footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Footer Content Styling */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Footer Text Heading Styling */
+.footer-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Footer Text Paragraph Styling */
+.footer-text p {
+  font-size: 16px;
+}
+
+/* Footer Text Link Styling */
+.footer-text a {
+  margin-right: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Footer Text Link Hover Effect */
+.footer-text a:hover {
+  color: rgb(9, 132, 208);
+}
+
+/* Footer Details Styling */
+.footer-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Footer Address, Phone, and Social Media Styling */
+.footer-address,
+.footer-phone,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+  margin-left: 14px;
+}
+
+/* Footer Address, Phone, and Social Media Headings Styling */
+.footer-address h3,
+.footer-phone h3,
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/* Footer Address and Phone Paragraph Styling */
+.footer-address p,
+.footer-phone p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Footer Address and Phone Icon Styling */
+.footer-address i,
+.footer-phone i {
+  margin-right: 10px;
+  color: whitesmoke;
+}
+
+/* Footer Social Media Link Styling */
+.footer-social a {
+  color: whitesmoke;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Footer Social Media Link Hover Effect */
+.footer-social a:hover {
+  color: rgb(9, 132, 208);
+}
+
+/* Footer Bottom Text Styling */
+.footer-bottom {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+/* Responsive Styles for Footer */
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
+  }
+
+  .footer-details {
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .footer-address,
+  .footer-phone,
+  .footer-social {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
